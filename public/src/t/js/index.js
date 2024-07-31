@@ -1,5 +1,3 @@
-//////////////////////////////////////////////////////////////
-// START RESOURCE V3
 $(function(){
     CheckFps();
     Alerts();
@@ -10,7 +8,6 @@ $(function(){
     console.log("%c🌳 Name：TsumugiHaruto | Bio：Sayy Hello | Url：https://www.thanhdieu.com 🌳", "font-family: ;color:#fff; background: linear-gradient(270deg, #18d7d3, #68b7dd, #8695e6, #986fee); padding: 8px 15px; border-radius: 8px");
     console.log("…………./´¯/)……….. (\\¯’\\\n…………/….//……….. …\\\\….\\\n………../….//………… ….\\\\….\\\n…../´¯/…./´¯\\\\………../¯‘\\\\…./¯’\\\\\n.././…/…./…./.|_|……_| .\\\\…\\\\…\\\\…\\\\.\\\\\n(.(….(….(…./.)..)..(..(. \\\\….)….)….).)\n.\\\\…………….\\/…/…\\\\. ..\\/……………./\n..\\\\…………….. /……..\\\\………………../\n…\\\\…………..(………. ..)……………./");
   });
-// CHECK FPS
 var fps=document.getElementById("fps");
 var startTime=Date.now();
 var frame=0;
@@ -24,14 +21,12 @@ function CheckFps() {
   }
   window.requestAnimationFrame(CheckFps);
 }
-// TIEU SU CHỮ CHẠY
 let typed=new Typed(".GioiThieu", {
   strings: [":]]","Hey brother, I'm a Full-stack developer.", "I like coding =]] "],
   typeSpeed: 95,
   backSpeed: 75,
   loop: true
 })
-// MUSIC PLAY
 const MusicList=[
     "//files.catbox.moe/4ow36v.mp3",
     "//files.catbox.moe/t3lq0s.mp3",
@@ -45,7 +40,7 @@ t=(t + 1) % MusicList.length;
 localStorage.setItem('td', t);
 audio.src=MusicList[t];
 audio.play();
-});
+});,
 // LOADER SCREEN ----------
 let spin=document.querySelector('.LoaderCover');
 window.addEventListener('load', () => {
